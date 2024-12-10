@@ -38,6 +38,40 @@ h2 {
     color: #453;
 }
 
+h3 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+    color: red;
+}
+
+
+.space {
+    display: block;
+    margin: 1em 0;
+}
+
+.clear {
+    clear: both;
+    display: block;
+}
+
+pre {
+    background-color: #2e2e2e;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 20px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+}
+
+code {
+    font-family: "Courier New", Courier, monospace;
+    color: #ffff00;
+}
+
 /* Paragraph styles */
 p {
     /*background-color: #f0e68c;*/ /*Khaki*/
@@ -50,13 +84,8 @@ p {
     text-align: center;
 }
 .right-paragraph {
-    text-align:right;
-    background-color: #FF2255;
-    float: right;
-    width: 300px;
-    border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
+    flex: 1;
+    text-align: center;
 }
 
 /* Image styles */
@@ -66,13 +95,29 @@ img {
     margin-left: auto;
     margin-right: auto;
 }
+
 .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.top-row {
     display: flex;
     align-items: flex-start;
 }
+
 .left-img {
+    float: left;
+    max-width: 45%;
+    height: auto;
     margin-right: 10px;
 }
+
+.below-image {
+    align-self: flex-start;
+    margin-top: 20px;
+}
+
 .logo {
     width 140px:
 }
