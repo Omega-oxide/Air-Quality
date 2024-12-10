@@ -8,13 +8,13 @@
 <body>
 <div id="header"></div>
     <script>
-        fetch('header-footer.html')
+        fetch('header.html')
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header').innerHTML = data;
                });
     </script>
-    <h2>Intro</h2>
+    <h2>Introduction</h2>
     <h3>Welcome to our website on our Raspberry Pi project using the BME230 Sensor</h3>
     <span class = space></span>
     <main>
