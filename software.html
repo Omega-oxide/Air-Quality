@@ -79,12 +79,12 @@ def main_menu():
 		choice = input("Enter your choice: ")
 
 		if choice == '1':
-			print("\nStarting sensor data reading as defualt")
+			print("\nStarting sensor data reading as default")
 			try:
 				while True:
 					read_sensor_data()
 					time.sleep(2)
-			except KeybordInterrupt:
+			except KeyboardInterrupt:
 				print("Reading stopped by user.")
 
 		elif choice == '2':
@@ -92,7 +92,7 @@ def main_menu():
 			try:
 				while True:
 					temp_f, _, _ = read_sensor_data()
-					check_temperature_warnings(temp_f, 20, 70)
+					check_temperature_warnings(temp_f, 20, 80)
 					time.sleep(2)
 			except KeyboardInterrupt:
 				print("Reading stopped by user.")
@@ -109,7 +109,7 @@ def main_menu():
 			except KeyboardInterrupt:
 				print("Reading stopped by user.")
 			except ValueError:
-				print("Invaild input. Please enter a valid temperature value")
+				print("Invalid input. Please enter a valid temperature value")
 
 		elif choice == '4':
 			print("Exiting program.")
