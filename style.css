@@ -85,6 +85,28 @@ p {
     text-align: center;
 }
 
+/* Flexbox styles for the main content */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.flex-item {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    background-color: #f0f8ff;
+    border-radius: 5px;
+}
+
+/* Green Bar styles */
+.green-bar {
+    background-color: #C6EDC3;
+    padding: 15px;
+    border-radius: 5px;
+}
+
 /* Image styles */
 img {
     display: block;
@@ -121,7 +143,7 @@ img {
 .column {
     flex: 1;
     margin: 10px;
-    max-width: 30%; /* Adjust this value to control the size of the images */
+    max-width: 30%;
 }
 
 .text-content {
@@ -194,14 +216,10 @@ nav ul li a::after {
     bottom: -6px;
 }
 
-
-/* Adjusted Logo Styles */
 .logo2 {
-    width: 60px; /* Adjust size as needed, smaller than before */
+    width: 60px;
     height: auto;
     position: fixed;
-    top: 10px; /* Adjust positioning as needed */
-    right: 10px; /* Adjust positioning as needed */
+    top: 10px;
+    right: 10px;
 }
-
-

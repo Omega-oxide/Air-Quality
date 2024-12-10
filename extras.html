@@ -12,9 +12,27 @@
             .then(response => response.text())
             .then(data => {
                 document.getElementById('header').innerHTML = data;
-               });
+            });
     </script>
     <h2>Extras</h2>
-
+    <main>
+        <div class="flex-container">
+            <div class="flex-item green-bar">
+                <h3>Issues Faced:</h3>
+                <ul>
+                    <li>Parts not arriving on time:
+                        <ul>
+                            <li>That held us back from starting sooner on Phase 1.</li>
+                            <li>Parts finally arrived.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-item green-bar">
+                <h3>Project Distribution:</h3>
+                <!-- Add your project distribution content here -->
+            </div>
+        </div>
+    </main>
 </body>
 </html>
